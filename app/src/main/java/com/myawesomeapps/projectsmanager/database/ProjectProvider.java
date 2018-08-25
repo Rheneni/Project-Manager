@@ -64,7 +64,11 @@ public class ProjectProvider extends ContentProvider {
                 throw new IllegalArgumentException("Cannot query unknown URI " + uri);
         }
 
-        cursor.setNotificationUri(getContext().getContentResolver(), uri);
+        try {
+            cursor.setNotificationUri(getContext().getContentResolver(), uri);
+        } catch (Exception e){
+            Log.e("Exception", e.getMessage());
+        }
         return cursor;
     }
 
@@ -97,6 +101,9 @@ public class ProjectProvider extends ContentProvider {
             return ContentUris.withAppendedId(uri, id);
         } catch (IllegalArgumentException e) {
             Log.e(LOG_TAG + "::insertProject", "IllegalArgumentException " + e.getMessage());
+            throw e;
+        } catch (NullPointerException e) {
+            Log.e(LOG_TAG + "::insertProject", "NullPointerException " + e.getMessage());
             throw e;
         }
     }

@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ProjectorEditorActivity"
+            android:name=".ProjectEditorActivity"
             android:parentActivityName=".MainActivity" >
             <!--android:theme="@style/EditorTheme"-->
             <meta-data

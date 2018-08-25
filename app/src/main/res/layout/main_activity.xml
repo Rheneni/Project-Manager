@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:padding="16dp">
+    android:padding="@dimen/activity_margin">
 
     <TextView
         android:id="@+id/top_menu_tabs"
@@ -12,8 +12,7 @@
         android:layout_height="wrap_content"
         android:text="Tabs Area - WIP"
         android:layout_alignParentTop="true"
-        android:gravity="center_horizontal"
-        android:padding="16dp"/>
+        android:gravity="center_horizontal"/>
 
     <TextView
         android:id="@+id/projects_menu_title"
@@ -21,25 +20,25 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/top_menu_tabs"
         android:gravity="center_horizontal"
-        android:text="Projects"
-        android:padding="16dp"/>
+        android:paddingTop="16dp"
+        android:text="Projects"/>
 
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/projects_recycler_view"
+        android:paddingTop="16dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/projects_menu_title"
-        android:text="Text"/>
+        android:layout_below="@id/projects_menu_title"/>
 
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/add_project"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
-        android:layout_margin="16dp"
+        android:layout_margin="8dp"
         android:src="@mipmap/ic_launcher_round"/>
 
 </RelativeLayout>

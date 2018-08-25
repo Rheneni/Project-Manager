@@ -1,5 +1,14 @@
 <resources>
     <string name="app_name">Projects Manager</string>
 
+    <!--project_editor.xml-->
     <string name="create_project">Create Project</string>
+    <string name="project_name_hint">Project Name</string>
+    <string name="project_name_input">Name</string>
+    <string name="confirm_project">Confirm Project</string>
+
+    <string name="unexpected_behaviour">Unexpected Behaviour</string>
+    <string name="project_created">Project Successfully Created!</string>
+    <string name="project_not_created">Project Creation did not Succeed!</string>
+
 </resources>
