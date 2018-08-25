@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Projects Manager</string>
+
+    <string name="create_project">Create Project</string>
+</resources>
